@@ -1,0 +1,156 @@
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 63251)
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 PUT user42 Alice
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 201 CREATED
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 GET user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 200 OK Alice
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 DEL user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 204 NO_CONTENT
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 GET user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 404 NOT_FOUND
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 STATS
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 200 OK keys=0 uptime=1.962 served=1
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 PUT user42 Alice EXTRA EXTRA
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 201 CREATED
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 GET user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 200 OK Alice EXTRA EXTRA
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63251): KV/1.0 QUIT
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63251): 200 OK goodbye
+Client ('127.0.0.1', 63251) sent QUIT command, closing connection
+Connection with ('127.0.0.1', 63251) closed
+Connection from ('127.0.0.1', 63252)
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63252): PUT user42 Alice
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63252): 426 UPGRADE_REQUIRED
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63252): PUT user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63252): 426 UPGRADE_REQUIRED
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63252): PUT user42
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63252): 426 UPGRADE_REQUIRED
+Connection with ('127.0.0.1', 63252) closed
+Connection from ('127.0.0.1', 63253)
+Connection from ('127.0.0.1', 63254)
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63253): KV/1.0 PUT shared_key value_from_client1
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63253): 201 CREATED
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63254): KV/1.0 GET shared_key
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63254): 200 OK value_from_client1
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63254): KV/1.0 PUT shared_key value_from_client2
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63254): 200 OK
+[2025-09-23 15:38:02] [REQUEST] from ('127.0.0.1', 63253): KV/1.0 GET shared_key
+[2025-09-23 15:38:02] [RESPONSE] to ('127.0.0.1', 63253): 200 OK value_from_client2
+Connection with ('127.0.0.1', 63253) closed
+Connection with ('127.0.0.1', 63254) closed
+
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 60798)
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 PUT user42 Alice
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 201 CREATED
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 GET user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 200 OK Alice
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 DEL user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 204 NO_CONTENT
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 GET user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 404 NOT_FOUND
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 STATS
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 200 OK keys=0 uptime=1.965 served=1
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 PUT user42 Alice EXTRA EXTRA
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 201 CREATED
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 GET user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 200 OK Alice EXTRA EXTRA
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60798): KV/1.0 QUIT
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60798): 200 OK goodbye
+Client ('127.0.0.1', 60798) sent QUIT command, closing connection
+Connection with ('127.0.0.1', 60798) closed
+Connection from ('127.0.0.1', 60799)
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60799): PUT user42 Alice
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60799): 426 UPGRADE_REQUIRED
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60799): PUT user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60799): 426 UPGRADE_REQUIRED
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60799): PUT user42
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60799): 426 UPGRADE_REQUIRED
+Connection with ('127.0.0.1', 60799) closed
+Connection from ('127.0.0.1', 60800)
+Connection from ('127.0.0.1', 60801)
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60800): KV/1.0 PUT shared_key value_from_client1
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60800): 201 CREATED
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60801): KV/1.0 GET shared_key
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60801): 200 OK value_from_client1
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60801): KV/1.0 PUT shared_key value_from_client2
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60801): 200 OK
+[2025-09-23 16:07:38] [REQUEST] from ('127.0.0.1', 60800): KV/1.0 GET shared_key
+[2025-09-23 16:07:38] [RESPONSE] to ('127.0.0.1', 60800): 200 OK value_from_client2
+Connection with ('127.0.0.1', 60800) closed
+Connection with ('127.0.0.1', 60801) closed
+
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 59749)
+[2025-09-23 16:14:08] [REQUEST] from ('127.0.0.1', 59749): KV
+[2025-09-23 16:14:08] [RESPONSE] to ('127.0.0.1', 59749): 400 BAD_REQUEST
+[2025-09-23 16:14:21] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 PUT Hieu test
+[2025-09-23 16:14:21] [RESPONSE] to ('127.0.0.1', 59749): 201 CREATED
+[2025-09-23 16:14:28] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 GET Hieu
+[2025-09-23 16:14:28] [RESPONSE] to ('127.0.0.1', 59749): 200 OK test
+[2025-09-23 16:14:39] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 DEL Hieu
+[2025-09-23 16:14:39] [RESPONSE] to ('127.0.0.1', 59749): 204 NO_CONTENT
+[2025-09-23 16:14:47] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 DEL Hieu
+[2025-09-23 16:14:47] [RESPONSE] to ('127.0.0.1', 59749): 404 NOT_FOUND
+[2025-09-23 16:14:53] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 STATS
+[2025-09-23 16:14:53] [RESPONSE] to ('127.0.0.1', 59749): 200 OK keys=0 uptime=63.934 served=1
+[2025-09-23 16:15:09] [REQUEST] from ('127.0.0.1', 59749): KV/1.0 QUIT
+[2025-09-23 16:15:09] [RESPONSE] to ('127.0.0.1', 59749): 200 OK goodbye
+Client ('127.0.0.1', 59749) sent QUIT command, closing connection
+Connection with ('127.0.0.1', 59749) closed
+
+Connection from ('127.0.0.1', 60148)
+[2025-09-23 16:44:11] [REQUEST] from ('127.0.0.1', 60148): t
+[2025-09-23 16:44:11] [RESPONSE] to ('127.0.0.1', 60148): 400 BAD_REQUEST
+[2025-09-23 16:44:23] [REQUEST] from ('127.0.0.1', 60148): KV/1.0 POTT user42 Alice
+[2025-09-23 16:44:23] [RESPONSE] to ('127.0.0.1', 60148): 400 BAD_REQUEST
+
+Shutting down server...
+Server stopped
+
+Shutting down server...
+Server stopped
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 60279)
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 PUT user42 Alice
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 201 CREATED
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 GET user42
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 200 OK Alice
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 DEL user42
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 204 NO_CONTENT
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 GET user42
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 404 NOT_FOUND
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 STATS
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 200 OK keys=0 uptime=1.973 served=1
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 PUT user42 Alice EXTRA EXTRA
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 201 CREATED
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 GET user42
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 200 OK Alice EXTRA EXTRA
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60279): KV/1.0 QUIT
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60279): 200 OK goodbye
+Client ('127.0.0.1', 60279) sent QUIT command, closing connection
+Connection with ('127.0.0.1', 60279) closed
+Connection from ('127.0.0.1', 60280)
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60280): PUT user42 Alice
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60280): 426 UPGRADE_REQUIRED
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60280): PUT user42
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60280): 426 UPGRADE_REQUIRED
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60280): KV/1.0 POST user42 Alice
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60280): 400 BAD_REQUEST
+Connection with ('127.0.0.1', 60280) closed
+Connection from ('127.0.0.1', 60281)
+Connection from ('127.0.0.1', 60282)
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60281): KV/1.0 PUT shared_key value_from_client1
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60281): 201 CREATED
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60282): KV/1.0 GET shared_key
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60282): 200 OK value_from_client1
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60282): KV/1.0 PUT shared_key value_from_client2
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60282): 200 OK
+[2025-09-23 16:52:07] [REQUEST] from ('127.0.0.1', 60281): KV/1.0 GET shared_key
+[2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60281): 200 OK value_from_client2
+Connection with ('127.0.0.1', 60281) closed
+Connection with ('127.0.0.1', 60282) closed
