@@ -154,3 +154,17 @@ Connection from ('127.0.0.1', 60282)
 [2025-09-23 16:52:07] [RESPONSE] to ('127.0.0.1', 60281): 200 OK value_from_client2
 Connection with ('127.0.0.1', 60281) closed
 Connection with ('127.0.0.1', 60282) closed
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 58028)
+[2025-09-23 17:17:10] [REQUEST] from ('127.0.0.1', 58028): KV/1.0 QUIT
+[2025-09-23 17:17:10] [RESPONSE] to ('127.0.0.1', 58028): 200 OK goodbye
+Client ('127.0.0.1', 58028) sent QUIT command, closing connection
+Connection with ('127.0.0.1', 58028) closed
+KVSS Server started on 127.0.0.1:5050
+Waiting for connections... (Press Ctrl+C to stop)
+Connection from ('127.0.0.1', 60114)
+[2025-09-23 17:47:46] [REQUEST] from ('127.0.0.1', 60114): T
+[2025-09-23 17:47:46] [RESPONSE] to ('127.0.0.1', 60114): 400 BAD_REQUEST
+[2025-09-23 17:48:02] [REQUEST] from ('127.0.0.1', 60114): KV/1.0 PUT Cuong tet[C[C test
+[2025-09-23 17:48:02] [RESPONSE] to ('127.0.0.1', 60114): 201 CREATED
